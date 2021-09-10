@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --heading: "Montserrat", sans-serif;
+  --label: "Ubuntu", sans-serif;
+  --button: "Ubuntu", sans-serif;
+  --message: "Ubuntu", sans-serif;
+}
+body {
+  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+}
+#heading {
+  text-align: center;
+  color: white;
+  font-family: var(--heading);
+}
+.container {
+  /* background-color: aqua; */
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+label {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  font-family: var(--label);
+}
+#birth-day {
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  outline: none;
+}
+#lucky-number {
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  outline: none;
+}
+#message {
+  height: 2.5rem;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-family: var(--message);
+}
+#button {
+  width: 40%;
+  height: 2.5rem;
+  padding: 0.5rem;
+  margin: 2rem auto;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  font-family: var(--button);
+}
+footer {
+  display: fixed;
+  bottom: 0;
+  height: 10vh;
+  margin: 1rem auto;
+}
+footer p {
+  text-align: center;
+  font-weight: bolder;
+  font-family: "Ubuntu";
+}
+#foot {
+  text-align: center;
+  margin: 0.5rem 0;
+}
