@@ -12,6 +12,7 @@ function clickHandler() {
   show();
   calculation();
   toCheckLucky();
+  checkError();
 }
 function show() {
   newBirthDate = birthDate.value;
@@ -30,6 +31,13 @@ function toCheckLucky() {
     message.innerText = "You found to be lucky 🤗";
   } else {
     message.innerText = "Sorry you are not lucky 😢";
+  }
+}
+function checkError() {
+  if (newLuckyNumber <= 0) {
+    message.innerText = "You are making fun of your's. Enter a valid Number";
+  } else if ((newBirthDate === "") & (newLuckyNumber === "")) {
+    message.innerText = "Enter some digit to check";
   }
 }
 
